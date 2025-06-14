@@ -1,0 +1,36 @@
+body{
+    background-image: url(./assets/assets/bg-mobile.jpg);
+    background-repeat: no-repeat; /* Faz não repetir a imagem */
+    background-position: top center;/* Começar o eixo y do topo */
+    background-size: cover; /* Cobrir areas descobertas */
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+#container {
+    width: 360px;
+    height: 712px;
+    border: 1px solid red;
+    margin: auto;
+
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profile img {
+    width: 112px; /* Medida do figma */ /* Não precisa colocar a altura */
+}
+
+#profile p{
+    font-weight: 500;
+    line-height: 24px;
+    display: inline;
+
+}
