@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cria uma box começando da borda */
+}
+
 body{
     background-image: url(./assets/assets/bg-mobile.jpg);
     background-repeat: no-repeat; /* Faz não repetir a imagem */
@@ -12,25 +18,31 @@ body * {
 
 #container {
     width: 360px;
-    height: 712px;
-    border: 1px solid red;
-    margin: auto;
+    margin: auto; /* Propriedade que vale para as laterais e para em cima e em baixo*/
+    margin-top: 56px;
+    /*margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;*/
 
 }
 
+#username {
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+    padding-bottom: 20px;
+}
+
 #profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    text-align: center;
 }
 
 #profile img {
     width: 112px; /* Medida do figma */ /* Não precisa colocar a altura */
+    
 }
 
 #profile p{
     font-weight: 500;
     line-height: 24px;
-    display: inline;
-
 }
